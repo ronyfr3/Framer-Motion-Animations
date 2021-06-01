@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.fade-in{
+  animation: fade 0.9s ease-in;
+}
+@keyframes fade{
+  0%{
+    opacity:0;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* mainly for pageTransition to hide spaces on x axis*/
+  overflow-x: hidden; 
+  background-color: rgb(12, 3, 3);
+}
+nav{
+background-color: rgb(128, 128, 128);
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  list-style: none;
+}
+li{
+  background-color: rgb(36, 36, 44);
+  padding: 5px;
+  margin: 3px;
+  color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.box1{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  margin-top: 450px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+.box2{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(136, 255, 0);
+  margin-bottom: 150px;
+  border-radius: 50%;
+  text-align: center;
 }

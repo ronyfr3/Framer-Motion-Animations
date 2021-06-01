@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Switch, Route, useLocation } from 'react-router-dom'
+import Home from './PageTransition/Home'
+import Contact from './PageTransition/Contact'
+import Projects from './PageTransition/Projects'
+import PageTransition from './PageTransition/PageTransition'
+import {AnimatePresence} from 'framer-motion'
+import HeaderRotation from './PageLoadAnimation/HeaderRotation'
+import FramerScroll from './OnScroll/FramerScroll'
 
-function App() {
+const App = () => {
+  const location = useLocation()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <PageTransition/> */}
+    {/* <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/" component={Home}/>
+        <Route path="/project" component={Projects}/>
+        <Route path="/contact" component={Contact}/>
+      </Switch>
+      </AnimatePresence> */}
+      {/* <HeaderRotation/> */}
+      <FramerScroll/>
+      </>
+  )
 }
 
-export default App;
+export default App
