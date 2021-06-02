@@ -12,8 +12,7 @@ html,body{
   padding: 0;
   box-sizing: border-box;
   /* mainly for pageTransition to hide spaces on x axis*/
-  overflow-x: hidden; 
-  background-color: rgb(12, 3, 3);
+  overflow-x: hidden;
 }
 nav{
 background-color: rgb(128, 128, 128);
@@ -60,4 +59,37 @@ a{
 .icons{
   font-size: 100px;
   margin-top:200px
+}
+
+.changed{
+  background-color: red;
+  color: white;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.notChanged{
+  background-color: rgb(24, 16, 16);
+  color: white;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+   transition: all 0.4s ease-in-out;
+}
+.magic{
+  color: rgb(241, 218, 9);
+  font-size: 16px;
+  position: fixed;
+  top: 350px;
+  left: 150px;
+  transition: all 0.2s ease-in;
+}
+.notMagic{
+  transition: all 0.2s ease-in;
+  color: rgb(24, 185, 137);
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 50px;
 }

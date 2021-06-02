@@ -1,12 +1,14 @@
 import React from 'react'
 import { Switch, Route, useLocation } from 'react-router-dom'
-import Home from './PageTransition/Home'
-import Contact from './PageTransition/Contact'
-import Projects from './PageTransition/Projects'
-import PageTransition from './PageTransition/PageTransition'
-import {AnimatePresence} from 'framer-motion'
-import HeaderRotation from './PageLoadAnimation/HeaderRotation'
-import FramerScroll from './OnScroll/FramerScroll'
+import ScrollColorChange from './ScrollBgColorChange.js/ScrollColorChange'
+// import Home from './PageTransition/Home'
+// import Contact from './PageTransition/Contact'
+// import Projects from './PageTransition/Projects'
+// import PageTransition from './PageTransition/PageTransition'
+// import {AnimatePresence} from 'framer-motion'
+// import HeaderRotation from './PageLoadAnimation/HeaderRotation'
+// import FramerScroll from './OnScroll/FramerScroll'
+// import RefreshColorChange from './RefreshBackColorChange.js/RefreshColorChange'
 
 const App = () => {
   const location = useLocation()
@@ -21,7 +23,9 @@ const App = () => {
       </Switch>
       </AnimatePresence> */}
       {/* <HeaderRotation/> */}
-      <FramerScroll/>
+      {/* <FramerScroll/> */}
+      {/* <RefreshColorChange/> */}
+      <ScrollColorChange/>
       </>
   )
 }
